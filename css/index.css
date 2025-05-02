@@ -1,0 +1,300 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-family: "DM Sans", serif;
+}
+:root{
+   --bg-color:#0C0C0C;
+   --black:#000;
+   --white: hsl(0, 0%, 100%);
+  --dark-pink:#FF2E63;
+  --Neutral-300: hsl(252, 6%, 83%);
+--Neutral-500: hsl(245, 15%, 58%);
+--Neutral-700: hsl(245, 19%, 35%);
+--Neutral-900: hsl(248, 70%, 10%);
+
+--Orange-500: hsl(7, 88%, 67%);
+--Orange-700: hsl(7, 71%, 60%);
+
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   background: var(--bg-color);
+   width: 100vw;
+   
+}
+
+svg path{
+   fill: transparent;
+   stroke: var(--white);
+   stroke-width:.3;
+   stroke-dasharray: 200;
+   stroke-dashoffset: 200;
+   animation: animateText 4s ease-in-out 1 forwards;
+}
+@keyframes animateText{
+   0%{
+      stroke-dashoffset: 200;
+   }
+   75%{
+      fill: transparent;
+   }
+   100%{
+      fill:var(--white);
+      stroke-dashoffset: 0;
+   }
+}
+
+nav{
+   width: 100%;
+   color: var(--white);
+   display: flex;
+   justify-content: space-between;
+}
+nav ul li{
+   display: inline-block;
+}
+nav ul li a {
+   text-decoration: none;
+   color:var(--white);
+   font-size: 20px;
+   font-weight: 600;
+   margin: 10px 20px;
+   position: relative;
+   padding-bottom: 5px;
+}
+nav ul li a::before{
+   position: absolute;
+   content: '';
+   height: 4px;
+   width: 0;
+   bottom: 0;
+   background: var(--dark-pink);
+   border-radius: 2px;
+   transition:.3s linear;
+}
+nav ul li a:hover::before{
+   width: 100%;
+}
+nav .fa-solid{
+   display: none;
+}
+.logo{
+   width: 35px;
+   height: 35px;
+   object-fit: cover;
+}
+.container{
+   padding: 20px 25px;
+}
+ .content{
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.stu-det-cont {
+   display: none;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   
+}
+.stu-det-cont .card{
+   align-content: center;
+   margin: 10px auto;
+   width: clamp(300px,95%,350px);
+   display: block;
+   position: relative;
+   background:linear-gradient(var(--black),var(--Neutral-500));
+   padding: 15px;
+   border-radius: 12px;
+   color: var(--white);
+   
+}
+
+.box-cont{
+   height: 300px;
+   width: 230px;
+   position: relative;
+   transform-style: preserve-3d;
+   perspective: 1000px;
+   transition: .6s;
+   
+}
+.box-cont.active{
+   transform: rotateY(180deg);
+}
+.box{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   backface-visibility: hidden;
+   border: 1px solid #fff;
+}
+.img-box{
+   width: 100%;
+}
+.img-box img{
+   width: 100%;
+   object-fit: cover;
+}
+.back{
+   transform: rotateY(180deg);
+}
+.card::after{
+   position: absolute;
+   content: '';
+   height: 100%;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  transition: .3s linear;
+   background: linear-gradient(to left,var(--Orange-500) , var(--white),var(--Neutral-500));
+   z-index: -1;
+   padding: 3px;
+   border-radius: 14px;
+   
+}
+
+.card .id{
+   position: absolute;
+   right: -12px;
+   top: 50%;
+   transform: translateX(-50%,-50%);
+   text-align: center;
+   height: fit-content;
+   width: fit-content;
+   color: var(--Neutral-300);
+    transform: rotate(90deg);
+    transform-origin: center top; 
+    display: inline-block;
+}
+
+.card .upc-logo{
+   width: 25px;
+   height: 25px;
+}
+
+.card .profile-img{
+   width: 55px;
+   height: 55px;
+   border-radius: 3px;
+   object-fit: cover;
+}
+
+.card .header{
+   display: flex;
+   gap: 10px;
+}
+.card-title h1{
+   font-size: 16px;
+   margin-bottom: 7px;
+   color: var(--white);
+}
+.card-title p{
+   font-size: 13px;
+   color: var(--Neutral-300);
+}
+.card-details{
+   display: flex;
+   gap: 8px;
+   margin-top: 35px;
+}
+
+.card-details h1{
+   background: linear-gradient(to right,var(--Orange-500) , var(--white));
+   background-clip: text;
+   color: transparent;
+   font-size: 19px;
+   text-transform: uppercase;
+   margin: 5px 0;
+}
+.card-details p{
+   font-size: 12px;
+}
+
+.stu-det-cont.active{
+   display: flex;
+}
+
+.shift-buttons{
+   display: flex;
+   gap: 30px;
+   margin: 20px 0 40px 20px;
+}
+.shift-btn{
+   position: relative;
+   border: none;
+   outline: none;
+   background: none;
+   color: var(--white);
+   font-size: 17px;
+   text-transform: uppercase;
+}
+.shift-btn.active::before{
+   width: 100%;
+}
+.shift-btn::before{
+   position: absolute;
+   content: '';
+   width: 0%;
+   height: 3.4px;
+   border-radius: 2px;
+   background: var(--dark-pink);
+   left: 0;
+   bottom: -5px;
+   transition: .5s;
+}
+
+
+
+@media screen and (min-width:910px){
+   .card-details img{
+      width: 80px;
+      height: 80px;
+   }
+   .card-title img{
+      width: 40px;
+      height: 40px;
+   }
+   
+}
+@media screen and (max-width:600px){
+   nav ul{
+      position: fixed;
+      height: 100vh;
+      width: 240px;
+      top: 0;
+      right: -260px;
+      padding-top: 45px;
+      background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+      z-index: 10;
+      box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
+      transition: right 90ms linear;
+   }
+   nav ul.hide{
+      right: 0;
+   }
+   
+   nav ul li{
+      display: block;
+      margin: 35px 0;
+   }
+   nav .fa-solid{
+      display: block;
+      font-size: 26px;
+   }
+   nav ul i{
+      position: absolute;
+      top: 25px;
+      left: 27px;
+      
+   }
+}

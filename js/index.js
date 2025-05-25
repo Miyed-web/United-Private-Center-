@@ -113,3 +113,30 @@ function openBar(){
 const closeBar = ()=>{
    sideBar.classList.remove("hide")
 }
+
+                             
+fetch('images/upc-image.svg')
+    .then(res => res.text())
+    .then(data => {
+       document.querySelector(".content").innerHTML= data;
+    })
+    .catch(err => {
+    console.error(err)
+    alert(err)
+    }
+    ); 
+gsap.registerPlugin(ScrambleTextPlugin)
+  
+  
+     gsap.to(".main-title-txt", {
+  duration: 3, 
+  scrambleText: {
+    text: "STUDENTS", 
+    chars: "lowerCase", 
+    revealDelay: 0.5, 
+    speed: 0.3, 
+    newClass: "mainTxtActive"
+  }
+});
+  
+

@@ -96,7 +96,22 @@ nav .fa-solid{
    align-items: center;
    justify-content: center;
 }
-
+.main-title-txt{
+   color: var(--white);
+   font-size: 1.5rem;
+   font-weight: 900;
+   width: 170px;
+   padding: 5px;
+   margin-bottom: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   background: lightpink;
+}
+.mainTxtActive{
+   color:var(--dark-pink) ;
+}
 .stu-det-cont {
    display: none;
    align-items: center;

@@ -4,9 +4,7 @@ studentContainer = document.querySelectorAll(".stu-det-cont"),
 studentContainerBoys = document.querySelector(".stu-det-cont.boys"),
 studentContainerGirls = document.querySelector(".stu-det-cont.girls"),
 sideBar= document.querySelector(".sideBar")
-function flip(e){
-   e.target.classList.toggle("active")
-}
+
 girlsBtn.addEventListener("click", (e)=>{
 
 studentContainer[0].classList.remove("active")
@@ -52,22 +50,7 @@ studentContainerBoys.innerHTML= data.boys.map(item=>{
             </div> 
             
             
- <!--  <div class="box-cont" >
-               <div class="box front">
-               <div class="title-txt">
-                  <h2>${item.name}</h2>
-               </div>
-               <div class="img-box">
-                  <img src="${item.img}" alt="" />
-               </div>
-            </div>
-            <div class="box back">
-               <div class="img-box">
-                  <img src="images/img.jpg" alt="" />
-               </div>
-            </div>
-            </div>
-  -->
+
             `
    }).join('');
    

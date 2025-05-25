@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/0cd1d7ed23.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="shortcut icon" href="images/UPC-img.jpg" />
+   <title>United Private Center</title>
+</head>
+
+<body>
+   
+   <div id="about">
+      <div class="container">
+         <nav>
+            <img src="images/UPC-img.jpg" alt="logo" class="logo" />
+            <ul class="sideBar">
+               <i class="fa-solid fa-xmark" onclick="closeBar()"></i>
+               <li><a href="#about">Home</a></li>
+               <li><a href="#contributors">Contributors</a></li>
+               <li><a href="#students">Details</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openBar()"></i>
+         </nav>
+      <div class="content">
+      <!-- svg image  -->
+       </div>
+         
+      </div>
+   </div>
+   <div id="contributors" style="display:none;">
+      <div class="container">
+         <h1>Contributors</h1>
+         <div class="details">
+            <div class="manager">
+               <img src="" alt="" />
+               <p>Md. Sajedur</p>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+   <div id="students">
+      <div class="container">
+         <h2 id="main-title-txt" class="main-title-txt">STUDENTS</h2>
+         <div class="shift-buttons">
+            <button id="boys-btn" class="shift-btn active">boys</button>
+            <button id="girls-btn" class="shift-btn">girls</button>
+         </div>
+       <div class="stu-det-cont boys active">
+
+            
+         </div>
+         <div class="stu-det-cont girls">
+
+         </div>
+      </div>
+   </div>
+   
+ <div class="student-gallery">
+    
+    
+ </div>  
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+
+</html>

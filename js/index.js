@@ -5,6 +5,8 @@ studentContainerBoys = document.querySelector(".stu-det-cont.boys"),
 studentContainerGirls = document.querySelector(".stu-det-cont.girls"),
 sideBar= document.querySelector(".sideBar")
 
+
+
 girlsBtn.addEventListener("click", (e)=>{
 
 studentContainer[0].classList.remove("active")
@@ -87,9 +89,10 @@ boxCont.forEach(box=>{
    
 }).catch(e=>{
    alert(e)
-}).finally(e=>{
-   console.log('finished')
-})
+});
+
+
+
 function openBar(){
    sideBar.classList.add("hide")
 }

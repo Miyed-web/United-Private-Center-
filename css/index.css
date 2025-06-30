@@ -365,6 +365,7 @@ transition: 270ms;
   z-index:-1;
   left:0;
   top:0;
+  border-left: 1px dotted #000;
   
 }
 .upcCard:hover{

@@ -8,35 +8,35 @@
          "img": "https://i.postimg.cc/KjqWkkcy/niloy.jpg"
       },
       {
-         "name": "HA Hamim",
+         "name": "Hamim",
          "joinDate": "01 Jan 2020",
          "id": "UP-24-012",
          "school": "SGPMHS",
          "img": "https://i.postimg.cc/cLVVBnRx/hamim.jpg"
       },
       {
-         "name": "Jaabir IAD",
+         "name": "Jaabir",
          "joinDate": "01 Jan 2020",
          "id": "UP-24-004",
          "school": "SGPMHS",
          "img": "https://i.postimg.cc/wBLnfj2h/jaabir.jpg"
       },
       {
-         "name": "Sajid AA",
+         "name": "Sajid ",
          "joinDate": "01 Jan 2020",
          "id": "UP-24-014",
          "school": "SIA",
          "img": "https://i.postimg.cc/cHc2WkVC/sajid.jpg"
       },
       {
-         "name": "HS Banna",
+         "name": "Banna",
          "joinDate": "01 Jan 2022",
          "id": "UP-24-016",
          "school": "SGPMHS",
          "img": "https://i.postimg.cc/TYPMdG26/banna.jpg"
       },
       {
-         "name": "Rejvey Islam",
+         "name": "Rejvey",
          "joinDate": "01 Jan 2021",
          "id": "UP-24-014",
          "school": "SGPMHS",
@@ -100,21 +100,7 @@
          "school": "SGPMHS",
          "img": "https://i.postimg.cc/gcq8x8bM/IMG20230301081354-1-2.jpg"
       },
-      {
-         "name": "Mushfika",
-         "joinDate": "01 Jan 2020",
-         "id": "UP-24-010",
-         "school": "SGPMHS",
-         "img": ""
-      },
-      {
-         "name": "Ilma",
-         "joinDate": "01 Jan 2020",
-         "id": "UP-24-017",
-         "school": "SGGS",
-         "img": ""
-      },
-      {
+         {
          "name": "Tasnim",
          "joinDate": "01 Jan 2020",
          "id": "UP-24-018",

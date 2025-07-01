@@ -368,11 +368,95 @@ transition: 270ms;
   border-left: 1px dotted #000;
   
 }
+.back h3{
+   margin: 30px;
+   background-image: linear-gradient(var(--dark-pink),var(--Orange-500));
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   text-align: center;
+   font-size: .9rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   transition: .1s;
+   padding: 4px;
+   outline: 1px dotted #000;
+}
+.back p{
+   margin: 20px;
+   font-family: 'Brush Script MT', cursive;
+    color: #333;
+}
+.back .name{
+   position: absolute;
+   left: 150px;
+   font-size: 20px;
+}
 .upcCard:hover{
    transform:  rotate(5deg);
 }
 .upcCard:hover .front{
    transform: rotateY(-160deg);
+}
+.upcCard:hover .front h3{
+   visibility: hidden;
+}
+footer {
+  width: 100%;
+  padding: 20px;
+  margin-top: 60px;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, #000 24.5%, #111 66%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 40px;
+}
+
+footer ul {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+footer ul li {
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+footer ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -5px;
+  border-radius: 2px;
+  left: 0;
+  background: #FF2E63;
+  transition: width .2s ease-in-out;
+}
+
+footer ul li a:hover::after {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+footer .container {
+  width: 100%;
+  border-top: 1px solid #808080;
 }
 
 @media screen and (min-width:910px){
@@ -417,4 +501,9 @@ transition: 270ms;
       left: 27px;
       
    }
+   footer ul li {
+    margin: 10px 0;
+    display: block;
+    
+  }
 }

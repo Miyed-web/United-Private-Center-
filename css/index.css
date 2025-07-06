@@ -404,8 +404,8 @@ transition: 270ms;
 
 
 .student-gallery{
+  margin-top: 5em;
   display: grid;
-  
   grid-template-columns: 175px 175px;
   grid-template-rows: 200px 200px 200px 200px 200px;
   gap: .4em;
@@ -426,6 +426,9 @@ transition: 270ms;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.memories{
+  color: #fff;
 }
 footer {
   width: 100%;

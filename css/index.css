@@ -401,6 +401,32 @@ transition: 270ms;
 .upcCard:hover .front h3{
    visibility: hidden;
 }
+
+
+.student-gallery{
+  display: grid;
+  
+  grid-template-columns: 175px 175px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  gap: .4em;
+  grid-template-areas: 
+  "box-1 box-1"
+  "box-2 box-3"
+  "box-2 box-5"
+  "box-6 box-5"
+  "box-4 box-4";
+}
+.student-gallery div{
+  position: relative;
+}
+.student-gallery div img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 footer {
   width: 100%;
   padding: 20px;

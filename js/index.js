@@ -3,7 +3,30 @@ girlsBtn = document.getElementById('girls-btn'),
 studentContainer = document.querySelectorAll(".stu-det-cont"),
 studentContainerBoys = document.querySelector(".stu-det-cont.boys"),
 studentContainerGirls = document.querySelector(".stu-det-cont.girls"),
-sideBar= document.querySelector(".sideBar")
+sideBar= document.querySelector(".sideBar"),
+prevImg= document.querySelector('.prev-img'),
+images= document.querySelectorAll(".box img"),
+closeIcon= prevImg.querySelector("span")
+
+
+closeIcon.onclick = ()=>{
+   prevImg.classList.remove("active")
+}
+
+prevImg.style.viewTransitionName = "target";
+
+images.forEach(img=>{
+   img.addEventListener('click',()=>{
+     document.startViewTransition(async ()=>{
+        prevImg.classList.add("active");
+     prevImg.querySelector("img").src = img.src;
+     })
+   }
+      
+   )
+})
+
+   
 
 
 

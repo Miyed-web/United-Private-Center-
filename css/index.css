@@ -402,8 +402,14 @@ transition: 270ms;
    visibility: hidden;
 }
 
+.memory-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 .student-gallery{
+
   margin-top: 5em;
   display: grid;
   grid-template-columns: 175px 175px;
@@ -416,10 +422,10 @@ transition: 270ms;
   "box-6 box-5"
   "box-4 box-4";
 }
-.student-gallery div{
+.student-gallery .box{
   position: relative;
 }
-.student-gallery div img{
+.student-gallery .box img{
   position: absolute;
   left: 0;
   top: 0;
@@ -429,6 +435,34 @@ transition: 270ms;
 }
 .memories{
   color: #fff;
+}
+.prev-img{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  
+  z-index: 9;
+}
+.prev-img.active{
+  display: flex;
+}
+.prev-img div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.prev-img span{
+  margin: 20px;
+}
+.prev-img div img{
+  
+  width: 95vw;
+  
 }
 footer {
   width: 100%;
